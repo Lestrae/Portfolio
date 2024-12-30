@@ -1,25 +1,79 @@
 body {
-  color: rgb(16, 208, 233);
+  color: rgb(233, 146, 16);
   background-image: url('https://wallpaperaccess.com/full/6223415.png');
-  font-family: monospace;
+  font-family: "Audiowide", "Courier New", monospace;
+  font-variant: small-caps;
+  font-size: 2vw;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #0e233a;
   transition: .5s ease;
 }
 
-#profile {
+.flex-container {
+  display: flex;
+  background-color: rgb(25, 73, 128); /* Default GIF */
+  margin: 5px;
+  width: 100%;
+  border-radius: 25px;
+ 
+}
+
+.flex-container.entertainment {
+  display: flex;
+  background-color: rgb(71, 47, 27); /* Default GIF */
+  margin: 5px;
+  width: 100%;
+  border-radius: 25px;
+ 
+}
+
+.flex-container > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: right;
+  width: 20%;
+  padding: 20px 20px;
+  margin: 10px;
+  border-radius: 25px;
+}
+
+.settings {
+  background-color: rgb(90, 22, 22); /* Default GIF */
+  background-size: cover; /* Cover the entire button */
+  background-position: center; /* Center the image */
+  color: rgb(24, 149, 165); /* Text color */
+  border: none; /* Remove border */
+  font-size: 20px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  position: right; /* Positioning context for the pseudo-element */
+  overflow: hidden; /* Ensure no overflow */
+  float: right; 
+  width: 100%;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+.settings:hover {
+  background-color: rgb(10, 51, 114);
+  text-shadow: 0 0 50px rgba(195, 0, 255, 0.5);
+}
+.font-effect-neon {
   /* background-color: gray; */
   border: none; /* Remove border */
-  padding: none; /* Padding */
+  padding: 15px; /* Padding */
   cursor: pointer; /* Pointer cursor on hover */
   position: relative; /* Positioning context for the pseudo-element */
   overflow: hidden; /* Ensure no overflow */
   background-blend-mode: lighten;
+  width: 100%;
+  margin: 5px;
+  font-size: 2vw;
 }
 
 title {
@@ -27,36 +81,35 @@ title {
   font-weight: bold;
   text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
-#work {
+#work, #personal {
   background-color: rgb(9, 41, 71); /* Default GIF */
   background-size: cover; /* Cover the entire button */
   background-position: center; /* Center the image */
-  color: rgb(24, 149, 165); /* Text color */
   border: none; /* Remove border */
-  padding: 20px 20px; /* Padding */
-  font-size: 20px; /* Font size */
   cursor: pointer; /* Pointer cursor on hover */
   position: relative; /* Positioning context for the pseudo-element */
   overflow: hidden; /* Ensure no overflow */
+  width: 100%;
+}
+
+#personal {
+  background-color: rgb(26, 9, 71); /* Default GIF */
+  background-size: cover; /* Cover the entire button */
+  background-position: center; /* Center the image */
+  border: none; /* Remove border */
+  cursor: pointer; /* Pointer cursor on hover */
+  position: relative; /* Positioning context for the pseudo-element */
+  overflow: hidden; /* Ensure no overflow */
+  width: 100%;
 }
 
 #work:hover {
   background-color: rgb(10, 51, 114);
-}
-#game {
-  background-color: rgb(94, 18, 18); /* Default GIF */
-  background-size: cover; /* Cover the entire button */
-  background-position: center; /* Center the image */
-  color: rgb(24, 149, 165); /* Text color */
-  border: none; /* Remove border */
-  padding: 20px 20px; /* Padding */
-  font-size: 20px; /* Font size */
-  cursor: pointer; /* Pointer cursor on hover */
-  position: relative; /* Positioning context for the pseudo-element */
-  overflow: hidden; /* Ensure no overflow */
+  text-shadow: 0 0 50px rgba(195, 0, 255, 0.5);
 }
 
-#game:hover {
+
+#personal:hover {
   background-color: rgb(131, 33, 33);
-}
+  text-shadow: 0 0 50px rgba(195, 0, 255, 0.5);
 
