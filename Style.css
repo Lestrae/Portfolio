@@ -110,7 +110,7 @@ h2 {
   border-radius: 4px;
   animation: borderColor 10s infinite; 
 }
-.headBar > a:hover {
+.headBar a:hover {
   background-color: var(--hoverBgClr);
 }
 .proficiencies {
