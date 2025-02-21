@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <script src = "./Interface.js"></script>
+  <link rel = "stylesheet" href = "./Style.css">
+  <link rel="icon" type="image/x-icon" href="./myicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anta">
+  <script>
+    // Disable right-click context menu
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+});
+  </script>
+</head>
+<body>
+  <div class = 'header'>
+    <h2>  
+░██╗░░░░░░░██╗███████╗██╗░░░░░░█████╗░░█████╗░███╗░░░███╗███████╗
+░██║░░██╗░░██║██╔════╝██║░░░░░██╔══██╗██╔══██╗████╗░████║██╔════╝
+░╚██╗████╗██╔╝█████╗░░██║░░░░░██║░░╚═╝██║░░██║██╔████╔██║█████╗░░
+░░████╔═████║░██╔══╝░░██║░░░░░██║░░██╗██║░░██║██║╚██╔╝██║██╔══╝░░
+░░╚██╔╝░╚██╔╝░███████╗███████╗╚█████╔╝╚█████╔╝██║░╚═╝░██║███████╗
+░░░╚═╝░░░╚═╝░░╚══════╝╚══════╝░╚════╝░░╚════╝░╚═╝░░░░░╚═╝╚══════╝
+
+    </h2>
+  </div>
+  <div class = 'headBar'>
+    <ul class = 'headBar1'>
+      <li class = 'headBar2'><a class = 'headBar3' href = "#ID">Home</a></li>
+      <li class = 'headBar2'><a class = 'headBar3' href = "#aboutme">About</a></li>
+      <li class = 'headBar2'><a class = 'headBar3' href = "#projects">Projects</a></li>
+      <li class = 'headBar2'><a class = 'headBar3' href = "#contact">Contact</a></li>
+    </ul>
+  </div>
+  <div class = 'navBar'>
+      <img id = 'ID' src = './Pictures/ID pic.jpg' alt = 'ID pic'>
+      <div class ='bio'>
+        <span>
+          Gian Jemuel C. Laban<br>
+        </span>
+        <span>  
+          Phone: +639763512831<br>
+        </span>
+        <span>
+          Email: muellivan@gmail.com
+        </span>
+      </div>
+    <h3 class = 'Emphasis'>
+      Technical Skills:
+    </h3>
+    <div class = 'proficiencies'>
+      <ul>
+        <li>Javascript</li>
+        <li>CSS</li>
+        <li>HTML</li>
+        <li>Bootstrap</li>
+        <li>Git</li>
+        <li>ReactJs</li>
+        <li>Tailwind CSS</li>
+        <li>NodeJs</li>
+        <li>Vite</li>
+        <li>Supabase</li>
+        <li>VS Code</li>
+        <li>MS Office</li>
+      </ul>
+    </div>
+    <h3 class = 'Emphasis'>
+      Soft Skills:
+    </h3>
+    <div class = 'soft'>
+      <ul>
+        <li>Adaptability</li>
+        <li>Resourcefulness</li>
+        <li>Problem-Solving</li>
+        <li>Critical Thinking</li>
+        <li>Teamwork</li>
+      </ul>
+    </div>
+  </div>
+  <div class = "content">
+    <div class = 'darkBars'>
+      <a id= 'aboutme'>About me:</a>
+    </div>
+      <p>
+        I am inherently a puzzle-loving, problem-solving enthusiast, and I realized my passion for
+        programming when I was doing my senior capstone project during college. I really 
+        liked debugging and getting to the root cause of a problem in a system, everything about it just
+        felt rewarding. I am an aspiring software engineer with a fresh hunger for learning, let us work together!
+      </p>
+    <div class = 'darkBars'>
+      <a id = 'projects'>My projects:</a>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src = './Pictures/Capstone Project.jpg' id = 'eggDevice' alt = 'Capstone Project'>
+        </div>
+        <div class="flip-card-back">
+          <p> 
+            Non-invasive Duck Egg-Sexing Device<br><br>
+            My senior capstone project. By utilizing Artificial Intelligence through Python, (YOLOv8 nano, PyTorch, SVM, DSP) 
+            we were able to detect the sex of itik Pateros 
+            (Native Philippine Duck) eggs through a camera attached to a Raspberry Pi 4B via computer vision, 
+            effectively extracting its geometric and morphological features.<br><br> 
+            The detected features are then pipelined (Sphericity, Eccentricity and Shape Index) into a trained (SVM/Support Vector Machine) 
+            Machine Learning model using Raspberry Pi 4B’s Linux based OS built-in Python IDE.<br><br> 
+            The output predicted whether the eggs are male or female prior to the last day of the incubation period of the eggs (to be sold as balut) with a 93% accuracy.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card2">
+      <div class="flip-card-inner2">
+        <div class="flip-card-front2">
+          <img src = './Pictures/Profiled tabs.jpg' class = 'tabs' alt = 'Profiled tabs'>
+        </div>
+        <div class="flip-card-back2">
+          <p> 
+            Profiled Tabs web app<br><br>
+            A simple project that I made with HTML, CSS and Javascript.<br>
+            Profiled tabs web app was created with the purpose of saving time opening individual tabs depending on the theme. 
+            This includes two available profile options: Work profile and the Personal profile.<br><br>
+            Work profile may contain different professional sites like job finders, freelancing sites, or simply the sites that are always
+            used in a given work environment, whereas the personal profile may contain sites that are for personal leisure or entertainment sites. 
+            However, it is still up to the user to decide which sites they want to store since they can store every site in both profiles.
+            <br><br>
+            <img src = './Pictures/Profiled tabs 1.jpg' class = 'tabs1' alt = 'Profiled tabs'>
+            <img src = './Pictures/Profiled tabs 2.jpg' class = 'tabs2' alt = 'Profiled tabs'>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card2">
+      <div class="flip-card-inner2">
+        <div class="flip-card-front2">
+          <img src = './Pictures/Asteroids Game.jpg' id = 'webGame' alt = 'Asteroids Game'>
+        </div>
+        <div class="flip-card-back2">
+          <p> 
+            Asteroids web game<br><br>
+            One of my first upskilling projects.<br><br>
+            This web game was made using HTML canvas and Javascript. 
+            The game is vanilla and still on a prototype stage, since I only made it to reinforce my
+            understanding of Javascript at the time.<br><br>
+            It utilizes Javascript animation frame event loop requests 
+            as the core component--from rendering the ship itself, the asteroids, as well as the projectiles with
+            every single keypress event.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card2">
+      <div class="flip-card-inner2">
+        <div class="flip-card-front2">
+          <img src = './Pictures/Currency Converter.jpg' class ='tabs' alt = 'Currency Converter'>
+        </div>
+        <div class="flip-card-back2">
+          <p> 
+            Currency Converter<br><br>
+            A currency converter made using React, Vite, HTML and CSS.<br><br>
+            This app is connected to an external open source currency exchange rates API. 
+            Users can enter the amount they want to convert, select the currency they want to convert from,
+            and the currency they want to convert to. The app will then display the converted amount.<br><br>
+            Users can also swap the currencies that will simply change the states for from and to conversions or vice versa.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card2">
+      <div class="flip-card-inner2">
+        <div class="flip-card-front2">
+          <img src = './Pictures/Blog App 2.jpg' class ='tabs' alt = 'Blog App'>
+        </div>
+        <div class="flip-card-back2">
+          <p> 
+            Based Book blog app<br><br>
+            A simple CRUD app made using React, Vite, Tailwind and Supabase.<br><br>
+            This app enables users to sign in and sign out using Google authentication, connected to
+            an external Supabase database.<br><br>
+            Users can create, read, update, and delete their own blog posts. This was made possible due to
+            configured Supabase RLS policies.
+
+          </p>
+          <img src = './Pictures/Blog App.jpg' class = 'tabs1' alt = 'Blog App'>
+          <img src = './Pictures/Blog App 3.jpg' class = 'tabs2' alt = 'Blog App'>
+        </div>
+      </div>
+    </div>
+    <div class = 'darkBars'>
+      <a id = 'contact'>Contact Links:</a>
+    </div>
+    <div class = 'links'>
+      <div id ='fb'>
+          <a href ='https://www.facebook.com/muellivan/' target = '_blank'> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+            </svg>
+            acebook
+          </a>
+      </div>
+      <div id ='linkedIn'>
+        <a href ='https://www.linkedin.com/in/gian-laban-a14940241/' target = '_blank'> Linked
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 14 14">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+          </svg>
+        </a>
+    </div>
+  </div>
+</body>
+</html>
